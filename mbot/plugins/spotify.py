@@ -119,7 +119,7 @@ async def spotify_dl(_, message):
                     await AForCopy.copy(LOG_GROUP)
             return await m.delete()
         elif item_type == "album":
-            pForCopy = await message.reply_photo(photo="https://telegra.ph/file/a2c32b680fc44df2244d7.jpg", caption="🔽 SPOTIFY ALBUM 🔽")
+            pForCopy = await message.reply_photo(photo="https://telegra.ph/file/c52f56ca7a76a34018895.jpg", caption="🔽 SPOTIFY ALBUM 🔽")
             tracks = client.album_tracks(album_id=item_id)
             for track in tracks["items"]:
                 song = await fetch_spotify_track(client, track.get("id"))
