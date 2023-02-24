@@ -36,16 +36,16 @@ async def start(client, message):
     reply_markup = [
         [
             InlineKeyboardButton(
-                text="Channel 📨", callback_data="http"
+                text="🥀 Channel", callback_data="http"
             ),
             InlineKeyboardButton(
-                text="Help 🧑‍💻", callback_data="helphome"
+                text="Help ❣️", callback_data="helphome"
             ),
-            InlineKeyboardButton(text="Group 📨", url="https://t.me/songdownload_group"),
+            InlineKeyboardButton(text="Group 🍇", url="https://t.me/WOODcraft_Mirror_Topic"),
         ],
         [
             InlineKeyboardButton(
-                text="🛸LOG CHANNEL🛸", url="https://t.me/music_database_tg",
+                text="❤️ LOG CHANNEL ❤️", url="https://t.me/WD_music_database",
             ),
         ],
     ]
@@ -61,7 +61,7 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(reply_markup),
         )
     return await message.reply_text(
-        f"Hello {message.from_user.first_name},\nMy Name is <b>Sᴘᴏᴛɪғʏ✘Dʟ</b> Music Downloader Bot.\n\nI can download music from Spotify, Deezer, SoundCloud, Mix Cloud, Youtube Platforms.\n\nClick /help for more know me.",
+        f"🌹 Hello {message.from_user.first_name},\n🦋 My Name is <b>Sᴘᴏᴛɪғʏ WD Dʟ</b> Music Downloader Bot.\n\nI can download music from Spotify, Deezer, SoundCloud, Mix Cloud, Youtube Platforms.\n\nClick /help for more know me.𝐀ɴɢᴇʟ ✘ 𝐎ᴘ 🦋",
         reply_markup=InlineKeyboardMarkup(reply_markup),
     )
 
@@ -88,12 +88,12 @@ async def ping(client, message):
 
 
 HELP = {
-    "Youtube": "Send **Youtube** Link in Chat to Download Song.",
-    "Spotify": "Send **Spotify** Track/Playlist/Album Link. I'll Download It For You.",
-    "Deezer": "Send Deezer Playlist/Album/Track Link. I'll Download It For You.",
-    "Jiosaavn": "Not Implemented yet",
-    "SoundCloud": "Not Implemented yet",
-    "Group": "Will add later.",
+    "❣️ Youtube ❣️": "Send **Youtube** Link in Chat to Download Song.",
+    "🦋 Spotify 🦋": "Send **Spotify** Track/Playlist/Album Link. I'll Download It For You.",
+    "🍎 Deezer 🍎": "Send Deezer Playlist/Album/Track Link. I'll Download It For You.",
+    "🍓 Jiosaavn 🍓": "Not Implemented yet SED",
+    "🌶 SoundCloud 🌶": "Not Implemented yet SED",
+    "⚽️ Group ⚽️": "Will add later.",
 }
 
 
@@ -104,7 +104,7 @@ async def help(_, message):
     ]
 
     await message.reply_text(
-        f"Hello **{message.from_user.first_name}**,\nI'm Here to download your music.",
+        f"🦋 Hello **{message.from_user.first_name}**,\n🥀 I'm Here to download your music.",
         reply_markup=InlineKeyboardMarkup(button),
     )
 
@@ -113,9 +113,9 @@ async def help(_, message):
 async def helpbtn(_, query):
     i = query.data.replace("help_", "")
     button = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("Back", callback_data="helphome")]]
+        [[InlineKeyboardButton("💍 Back 💍", callback_data="helphome")]]
     )
-    text = f"Help for **{i}**\n\n{HELP[i]}"
+    text = f"🦋 Help for **{i}**\n\n{HELP[i]}"
     await query.message.edit(text=text, reply_markup=button)
 
 
@@ -125,6 +125,6 @@ async def help_home(_, query):
         [InlineKeyboardButton(text=i, callback_data=f"help_{i}")] for i in HELP
     ]
     await query.message.edit(
-        f"Hello **{query.from_user.first_name}**,\nI'm Here to download your music.",
+        f"🦋 Hello **{query.from_user.first_name}**,\n🥀 I'm Here to download your music.",
         reply_markup=InlineKeyboardMarkup(button),
     )
