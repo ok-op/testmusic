@@ -40,7 +40,7 @@ client = Client()
 
 
 
-#A = """#DEEZR_START 🟣\n🟣<b>Bot user:</b> {}\n🟣<b>User name:</b> @{}\n🟣<b>User Id:</b> <code>{}</code>\n🟣<b>Used command:</b> /start\n\n🔽<b>Started Bot</b>🔽\n@spotifysavetgbot\n@spotifysavetgbot"""
+#A = """#DEEZR_START 🟣\n🟣<b>Bot user:</b> {}\n🟣<b>User name:</b> @{}\n🟣<b>User Id:</b> <code>{}</code>\n🟣<b>Used command:</b> /start\n\n🔽<b>Started Bot</b>🔽\n@WD_spotifysavetgbot\n@WD_spotifysavetgbot"""
 
 
 @Mbot.on_message(filters.regex(r'https?://.*deezer[^\s]+') & filters.incoming | filters.regex(r'https?://.*deezer[^\s]+') & filters.command("deezer") & filters.chat(AUTH_CHATS))
