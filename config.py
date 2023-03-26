@@ -10,7 +10,7 @@ load_dotenv()
 admins = {}
 
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5827766615,6104498512").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5827766615").split()))
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001719983565"))
 
 
