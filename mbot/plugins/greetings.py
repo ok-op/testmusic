@@ -41,11 +41,11 @@ async def start(client, message):
             InlineKeyboardButton(
                 text="Help ❣️", callback_data="helphome"
             ),
-            InlineKeyboardButton(text="Group 🍇", url="https://t.me/WOODcraft_Mirror_Topic"),
+            InlineKeyboardButton(text="Group 🍇", url="https://t.me/WD_Topic_Group"),
         ],
         [
             InlineKeyboardButton(
-                text="❤️ LOG CHANNEL ❤️", url="https://t.me/WD_music_database",
+                text="❤️ LOG CHANNEL ❤️", url="https://t.me/+V7u8Qww6x9dmYmQ1",
             ),
         ],
     ]
