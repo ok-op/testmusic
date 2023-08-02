@@ -33,7 +33,7 @@ from mbot.utils.ytdl import audio_opt, getIds, thumb_down, ytdl_down
 
 @Mbot.on_message(filters.regex(r'(https?://)?.*you[^\s]+') & filters.incoming | filters.command(["yt","ytd","ytmusic"]) & filters.regex(r'https?://.*you[^\s]+') & filters.chat(AUTH_CHATS))
 async def _(_, message):
-    m = await message.reply_text("🔎")
+    m = await message.reply_text("💋")
     link = message.matches[0].group(0)
     if link in [
         "https://youtube.com/",
