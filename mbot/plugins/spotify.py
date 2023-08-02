@@ -47,7 +47,7 @@ client = spotipy.Spotify(
 @Mbot.on_message(filters.regex(r"https?://open.spotify.com[^\s]+")& filters.incoming | filters.regex(r"https?://open.spotify.com[^\s]+") | filters.command(["spotify", "spotdl"]) | filters.incoming & filters.regex(r"spotify:") & filters.chat(AUTH_CHATS))
 async def spotify_dl(_, message):
     link = message.matches[0].group(0)
-    m = await message.reply_text(f"🔎")
+    m = await message.reply_text(f"💋")
     try:
         parsed_item = await parse_spotify_url(link)
         item_type, item_id = parsed_item[0], parsed_item[1]
@@ -92,7 +92,7 @@ async def spotify_dl(_, message):
                 await copy(PForCopy,AForCopy)
             return await m.delete()
         elif item_type == "playlist":
-            pForCopy = await message.reply_photo(photo="https://telegra.ph/file/477fbab1510586e2199ce.jpg", caption="🔽 SPOTIFY PLAYLIST 🔽")
+            pForCopy = await message.reply_photo(photo="https://telegra.ph/file/477fbab1510586e2199ce.jpg", caption="🌺 Spotify Playlist 🌺")
             tracks = client.playlist_items(
                 playlist_id=item_id, additional_types=["track"]
             )
@@ -119,7 +119,7 @@ async def spotify_dl(_, message):
                     await AForCopy.copy(LOG_GROUP)
             return await m.delete()
         elif item_type == "album":
-            pForCopy = await message.reply_photo(photo="https://telegra.ph/file/c52f56ca7a76a34018895.jpg", caption="🔽 SPOTIFY ALBUM 🔽")
+            pForCopy = await message.reply_photo(photo="https://telegra.ph/file/c52f56ca7a76a34018895.jpg", caption="🌺 Spotify Album 🌺")
             tracks = client.album_tracks(album_id=item_id)
             for track in tracks["items"]:
                 song = await fetch_spotify_track(client, track.get("id"))
