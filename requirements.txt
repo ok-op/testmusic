@@ -1,6 +1,5 @@
 pyrogram==1.4.16
 tgcrypto
-yt-dlp
 python-dotenv
 requests
 asgiref
@@ -9,11 +8,8 @@ spotipy
 
 Pillow
 ffmpeg-python
-youtube-dl
 wget
 
-youtube-search-python==1.6.6
-youtube-search
 dnspython
 gitpython
 aiofiles
@@ -22,3 +18,6 @@ requests
 motor
 psutil
 future
+git+https://github.com/yt-dlp/yt-dlp@master
+git+https://github.com/alexmercerind/youtube-search-python@main
+git+https://github.com/joetats/youtube_search@master
